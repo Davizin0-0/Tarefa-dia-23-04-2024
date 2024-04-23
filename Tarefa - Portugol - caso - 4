@@ -1,0 +1,67 @@
+programa {
+  funcao inicio() {
+    inteiro i
+real a, b, c, menor, maior, meio
+
+escreva("Digite 1, 2 ou 3 para escolher o valor de i: ")
+leia(i)
+
+escreva("Escreva o valor de A: ")
+leia(a)
+
+escreva("Escreva o valor de B: ")
+leia(b)
+
+escreva("EScreva o valor de C: ")
+leia(c)
+
+
+  se(a>b e a>c){
+    a = maior
+  }
+  senao se(a<b e a<c)
+    a = menor
+
+  senao{
+    a = meio
+    }
+
+
+se(b>a e b>c){
+b = maior
+}
+senao se(b<a e b<c){
+b = menor
+  }
+senao{
+  b = meio
+}
+
+se(c>a e c>b){
+  c = maior
+}
+senao se(c<a e c<b){
+  c = menor
+}
+senao{
+  c = meio
+}
+
+escolha (i){
+  caso 1:
+  escreva(menor,", ", meio,", ", maior)
+  para
+
+  caso 2:
+  escreva(maior,", ", meio,", ", menor)
+  para
+
+  caso 3:
+  escreva(meio,", ", maior,", ", menor)
+  para
+
+  caso contrario:
+  escreva("Valor Invalido")
+}
+  }
+}
