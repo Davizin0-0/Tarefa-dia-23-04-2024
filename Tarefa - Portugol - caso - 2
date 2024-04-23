@@ -1,0 +1,41 @@
+programa {
+  funcao inicio() {
+  
+  inteiro num
+
+  escreva("Escolha uma opção entre 1 e 6: ")
+  leia(num)
+
+  se(num >6)
+  num = 7
+
+  escolha (num){
+    caso 1:
+    escreva("1- Venda a Vista")
+    pare
+    
+    caso 2:
+    escreva("2- Venda a prazo 30 dias")
+    pare
+
+    caso 3:
+    escreva("3- Venda a prazo 60 dias")
+    pare
+
+    caso 4:
+    escreva("4- Venda a prazo 90 dias")
+    pare
+
+    caso 5:
+    escreva("5- Venda com cartão de debito")
+    pare
+
+    caso 6:
+    escreva("6- Venda com cartão de credito")
+    pare
+
+    caso 7:
+    escreva("Numero Invalido")
+    }
+  } 
+}
