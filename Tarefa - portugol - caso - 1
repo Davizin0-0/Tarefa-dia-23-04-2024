@@ -1,0 +1,50 @@
+programa {
+  funcao inicio() {
+    inteiro idade, cat
+    cadeia nome
+
+    escreva("Digite o nome do atleta: ")
+    leia(nome)
+
+    escreva("Digite a idade do atleta: ")
+    leia(idade)
+
+    se(idade >= 5 e idade <=10){
+      cat = 1
+    }
+
+    senao se(idade <= 15){
+      cat = 2
+    }
+
+    senao se(idade <= 20){
+      cat = 3
+    }
+    
+    senao se(idade <= 25){
+      cat = 4
+    }
+
+    senao{
+      escreva("\nIdade Invalida")
+    }
+
+    escolha (cat){
+      caso 1:
+      escreva("\nO atleta ", nome," pertence a categoria Infantil")
+      pare
+
+      caso 2:
+      escreva("\nO atleta ", nome," pertence a categoria Juvenil")
+      pare
+
+      caso 3:
+      escreva("\nO atleta ", nome," pertence a categoria Junior")
+      pare
+
+      caso 4:
+      escreva("\nO atleta ", nome," pertence a categoria Profissional")
+      pare
+    }
+  }
+}
