@@ -1,0 +1,55 @@
+programa {
+  funcao inicio() {
+  
+  real num, venda, dif, total
+
+  escreva("Digite o valor da venda: ")
+  leia(venda)
+  
+  escreva("1-VENDA A VISTA \n2-VENDA A PRAZO 30 DIAS \n3-VENDA A PRAZO 60 DIAS \n4-VENDA A PRAZO COM 90 DIAS \n5-VENDA COM CARTÃO DE DÉBITO \n6-VENDA COM CARTÃO DE CRÉDITO ")
+
+  escreva("\nEscolha uma opção entre 1 e 6: ")
+  leia(num)
+
+  escreva("\n")
+
+  escolha (num){
+    caso 1:
+    dif = (venda/100)*10
+    total = venda - dif
+    escreva("Valor a ser pago com o desconto de 10%: ", total)
+    pare
+    
+    caso 2:
+    dif = (venda/100)*5
+    total = venda - dif
+    escreva("Valor a ser pago com o desconto de 5%: ", total)
+    pare
+
+    caso 3:
+    escreva("Valor a ser pago é de: ", venda)
+    pare
+
+    caso 4:
+    dif = (venda/100)*5
+    total = venda + dif
+    escreva("Valor a ser pago com o acrescimo de 5%: ", venda)
+    pare
+
+    caso 5:
+    dif = (venda/100)*8
+    total = venda - dif
+    escreva("Valor a ser pago com o desconto de 8%: ", venda)
+    pare
+
+    caso 6:
+    dif = (venda/100)*7
+    total = venda - dif
+    escreva("Valor a ser pago com o desconto de 7%: ", venda)
+    pare
+
+    caso contrario:
+    escreva("Numero Invalido")
+    }
+  } 
+}
